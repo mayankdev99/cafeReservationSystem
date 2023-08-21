@@ -1,0 +1,50 @@
+body {
+  background-color: #f8f9fa; /* Light grey background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('https://wallpapercave.com/wp/wp2038303.jpg');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 400;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form-group label,
+.form-group input {
+  color: #333; /* Darker text color */
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.1); /* Light grey input background */
+  border: none;
+  border-radius: 5px;
+  color: #333; /* Darker text color */
+}
+
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.15); /* Slightly darker input background on focus */
+  color: #333; /* Darker text color */
+}
+
+.btn-danger {
+  background-color: red;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: darkred;
+}
+

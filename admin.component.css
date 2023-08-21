@@ -1,0 +1,69 @@
+.image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://static.wixstatic.com/media/11062b_58e4546bc2be4f04803f678b0f524a95~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_58e4546bc2be4f04803f678b0f524a95~mv2.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-color: hsl(0, 0%, 6%); /* Light grey background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  width: 40%; /* Adjust the width */
+  text-align: center; /* Center text within the container */
+  margin-top: 30px; /* Add margin to top */
+  margin-bottom: 30px; /* Add margin to bottom */
+}
+
+.form-group label,
+.form-group input {
+  color: #333; /* Darker text color */
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.1); /* Light grey input background */
+  border: none;
+  border-radius: 5px;
+  color: #333; /* Darker text color */
+}
+
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.15); /* Slightly darker input background on focus */
+  color: #333; /* Darker text color */
+}
+
+.container h4 {
+  color: black; /* Set h4 tag content color to black */
+}
+
+.btn-danger {
+  color: white;
+  border-color: white;
+  background-color: rgb(77, 119, 183);
+}
+
+.btn-danger:hover {
+  background-color: rgb(77, 119, 182);
+}
+
+.btn-fill {
+  color: white;
+  background-color: rgb(29, 91, 224);
+}
+
+.btn-fill:hover {
+  background-color: rgb(6, 53, 128);
+}

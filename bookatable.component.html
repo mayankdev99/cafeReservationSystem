@@ -1,0 +1,75 @@
+<body>
+<div class="container">
+  <br>
+  <br>
+  <h1>Make Your Reservation</h1>
+  <h2>
+    An exclusive experience is only a reservation away!
+  </h2>
+  <div class="box">
+    <form (ngSubmit)="submitForm()">
+      <div class="grid">
+        <input
+          type="text"
+          placeholder="Your Name"
+          name="Name"
+          id="name"
+          required
+          [(ngModel)]="booking.name"
+        />
+        <input
+          type="text"
+          placeholder="Your Email"
+          name="email"
+          id="email"
+          required
+          [(ngModel)]="booking.email"
+        />
+        <input
+          type="text"
+          placeholder="Your Phone"
+          name="phone"
+          id="phone"
+          required
+          [(ngModel)]="booking.phoneNumber"
+        />
+        <input
+          type="datetime-local"
+          placeholder="Time"
+          name="time"
+          id="time"
+          required
+          [(ngModel)]="booking.bookingDate"
+        />
+        <select name="tableType" id="tableType" required [(ngModel)]="booking.numberOfPeople">
+          <option value="" disabled selected>No.of People</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+        <select name="tableChoice" id="tableChoice" required [(ngModel)]="booking.tableChoice">
+          <option value="" disabled selected>Choose Type</option>
+          <option value="ac">AC</option>
+          <option value="nonac">NON-AC</option>
+        </select>
+      </div>
+      <br>
+      <input
+        type="text"
+        placeholder="Message"
+        name="message"
+        id="message"
+        required
+        [(ngModel)]="booking.message"
+      />
+      <br />
+      <div class="buttonDiv">
+        <button type="submit" class="registration">Reserve my table</button>
+      </div>
+    </form>
+  </div>
+</div>
+</body>

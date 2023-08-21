@@ -1,0 +1,54 @@
+<div class="entire">
+  <h1>Reservation</h1>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <table border="1" align="center">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th> NAME</th>
+          <th>EMAIL</th>
+          <th>PHONE NUMBER</th>
+          <th>VISIT DATE</th>
+          <th>NO OF PEOPLE</th>
+          
+          <th>MESSAGE</th>
+          <th>TABLE CHOICE</th>
+          <th>APPROVAL</th>
+          <th>STATUS</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let reservation of reservations">
+          <td>{{ reservation.id }}</td>
+          <td>{{ reservation.name }}</td>
+          <td>{{ reservation.email }}</td>
+          <td>{{ reservation.phoneNumber }}</td>
+          <td>{{ reservation.bookingDate | date }}</td>
+          <td>{{ reservation.numberOfPeople }}</td>
+         
+          <td>{{ reservation.message}}</td>
+          <td>{{ reservation.tableChoice}}</td>
+          <td>
+            <button class="approval-button confirm-button"
+                    [ngClass]="{'active': reservation.confirmBooking === 'Confirm'}"
+                    (click)="confirmBooking(reservation.id)">Confirm</button>
+            <button class="approval-button cancel-button"
+                    [ngClass]="{'active': reservation.confirmBooking === 'Cancel'}"
+                    (click)="cancelBooking(reservation.id)">Cancel</button>
+          </td>
+          
+          <td>{{ reservation.status }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  
+
+
+  

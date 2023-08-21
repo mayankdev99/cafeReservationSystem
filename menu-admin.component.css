@@ -1,0 +1,77 @@
+
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://d18qs7yq39787j.cloudfront.net/uploads/contest/2545/1_pKRgd4fYHAEJTdj5i_zRgw.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(46, 38, 38, 0.5); /* Transparent background */
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ced4da; /* Small border */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form elements */
+.form-label {
+  font-weight: bolder;
+  color: #dbde27;
+  font-size: larger;
+}
+
+.form-check-label {
+  font-weight: bolder;
+  color: #dbde27;
+  font-size: larger;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.form-check-input {
+  margin-right: 8px;
+}
+
+/* Style radio buttons */
+.form-check-input[type="radio"] {
+  width: 18px;
+  height: 18px;
+}
+
+/* Style submit button */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Add some spacing */
+.mb-3 {
+  margin-bottom: 15px;
+}

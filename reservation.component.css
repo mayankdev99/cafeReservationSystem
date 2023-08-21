@@ -1,0 +1,98 @@
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.entire {
+  margin: 0;
+  min-height: 100vh;
+  background-image: url('https://unboxingthebizarre.files.wordpress.com/2021/04/untitled-design-1-6.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: Georgia;
+  margin-bottom: 20px;
+  color: rgb(243, 246, 246);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 10px; /* Add border radius to the table */
+}
+
+th,
+td {
+  border: 1px solid #383434;
+  text-align: left;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+th {
+  background-color: rgb(26, 191, 81);
+  color: rgb(51, 46, 46);
+}
+
+td {
+  background-color: rgb(214, 231, 235);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 1rem;
+}
+
+.approval-button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  margin-right: 4px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.confirm-button {
+  background-color: blue;
+}
+
+.cancel-button {
+  background-color: red;
+}
+
+.approval-button.active {
+  opacity: 0.6;
+}
+

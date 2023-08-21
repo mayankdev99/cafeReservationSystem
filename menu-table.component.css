@@ -1,0 +1,58 @@
+/* Apply styles to the container */
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the panel */
+.panel {
+  width: 80%;
+  max-width: 1200px;
+  border: none;
+}
+
+.panel-heading {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.panel-body {
+  padding: 20px;
+}
+
+/* Style the table */
+.table {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Center-align table cells */
+.table th,
+.table td {
+  text-align: center;
+}
+
+/* Style the Edit and Delete buttons */
+.btn-success,
+.btn-danger {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* Add some spacing below the buttons */
+.btn-success,
+.btn-danger {
+  margin-bottom: 4px;
+}
+
+

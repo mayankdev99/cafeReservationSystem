@@ -1,0 +1,50 @@
+<div class="image">
+  <br />
+  <br />
+  <div class="container d-flex justify-content-center">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="w-50 p-4">
+      <h4 class="text-center">User Login</h4>
+
+      <div class="row">
+        <div class="form-group">
+          <label for="emailid">Email</label>
+          <br />
+          <input
+            type="text"
+            id="emailid"
+            class="form-control"
+            formControlName="emailid"
+          />
+          <span
+            style="color: red"
+            class="small"
+            *ngIf="loginForm.get('emailid')?.invalid && loginForm.get('emailid')?.touched"
+          >Please enter a valid email</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group">
+          <label for="password">Password</label>
+          <br />
+          <span class="small" style="color: darkgreen"
+            >Your mobile number is your password</span
+          >
+
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            formControlName="mobileno"
+          />
+          <span
+            style="color: red"
+            class="small"
+            *ngIf="loginForm.get('mobileno')?.invalid && loginForm.get('mobileno')?.touched"
+          >Please enter a valid password</span>
+        </div>
+      </div>
+      <br />
+      <button type="submit" class="btn btn-outline-danger">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,83 @@
+.container {
+  margin-top: 20px;
+}
+
+.col-md-3 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.col-md-9 {
+  padding: 15px;
+}
+
+/* Styling for the filter section */
+.filter label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.filter input[type="radio"] {
+  margin-bottom: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #033a74;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.filter input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #17897e;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.filter input[type="radio"]:checked::before {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Styling for the cards */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #777;
+}
+
+.text-muted {
+  color: #aaa;
+}
+
+

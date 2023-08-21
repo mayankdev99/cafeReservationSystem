@@ -1,0 +1,40 @@
+<body>
+  <div class="container">
+  <div class="form-container">
+    <div class="mb-3 form-group">
+      <label for="menuName" class="form-label">Menu Name</label>
+      <input type="text" class="form-control" id="menuName" [(ngModel)]="newMenuItem.menuName">
+    </div>
+    <div class="mb-3 form-group">
+      <label for="description" class="form-label">Menu Description</label>
+      <input type="text" class="form-control" id="description" [(ngModel)]="newMenuItem.description">
+    </div>
+    <div class="mb-3 form-group">
+      <label for="price" class="form-label">Menu Price</label>
+      <input type="text" class="form-control" id="price" [(ngModel)]="newMenuItem.price">
+    </div>
+    <div class="mb-3 form-group">
+      <label class="form-label">Category</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="category" id="filter-breakfast" value="Breakfast" [(ngModel)]="newMenuItem.category">
+        <label class="form-check-label" for="filter-breakfast">Breakfast</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="category" id="filter-lunch" value="Lunch" [(ngModel)]="newMenuItem.category">
+        <label class="form-check-label" for="filter-lunch">Lunch</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="category" id="filter-dinner" value="Dinner" [(ngModel)]="newMenuItem.category">
+        <label class="form-check-label" for="filter-dinner">Dinner</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="category" id="filter-dessert" value="Dessert" [(ngModel)]="newMenuItem.category">
+        <label class="form-check-label" for="filter-dessert">Dessert</label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit </button>
+  </div>
+  </div>
+</body>
+
+

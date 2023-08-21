@@ -1,0 +1,47 @@
+body {
+  background-color: #f8f9fa; /* Light grey background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('https://nextrestaurants.com/wp-content/uploads/2019/10/Restaurant-Instagram-Photography.png');
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 10px;
+  padding: 20px;
+  width: 20%;
+  text-align: center; /* Center text within the container */
+}
+
+.form-group label,
+.form-group input {
+  color: #333; /* Darker text color */
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.1); /* Light grey input background */
+  border: none;
+  border-radius: 5px;
+  color: #333; /* Darker text color */
+}
+
+.form-control:focus {
+  background-color: rgba(0, 0, 0, 0.15); /* Slightly darker input background on focus */
+  color: #333; /* Darker text color */
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}

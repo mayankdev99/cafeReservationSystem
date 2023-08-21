@@ -1,0 +1,42 @@
+<body style="background-image: url('https://1.bp.blogspot.com/-RdwocJsXhts/WEcMNnATYnI/AAAAAAAAAAs/h_RoOMc4QDEsih_P157XXdJO4_eKar4FACLcB/s1600/dark.jpg'); 
+background-size: cover;">
+<div class="image">
+    <br />
+    <h3 style="color: rgba(251, 245, 251, 0.84)" class="text-center">
+      Update Profile
+    </h3>
+    <div class="container mt-3 d-flex justify-content-center">
+      <form class="w-50 p-4" style="color: rgb(247, 244, 242)">
+        <!-- Only display the form if userData is defined -->
+        <div *ngIf="userData">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="userData.name">
+          </div>
+          <div class="mb-3">
+            <label for="dob" class="form-label">Date Of Birth</label>
+            <input type="text" class="form-control" id="dob" name="dob" [(ngModel)]="userData.dob">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" class="form-control" id="email" name="email" [(ngModel)]="userData.emailid">
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <input type="text" class="form-control" id="address" name="address" [(ngModel)]="userData.address">
+          </div>
+          <div class="mb-3">
+            <label for="mobileno" class="form-label">Mobile Number</label>
+            <input type="text" class="form-control" id="mobileno" name="mobileno" [(ngModel)]="userData.mobileno">
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <input type="text" class="form-control" id="gender" name="gender" [(ngModel)]="userData.gender">
+          </div>
+          <button type="button" class="btn btn-primary" (click)="updateUserProfile()">Update Profile</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+  

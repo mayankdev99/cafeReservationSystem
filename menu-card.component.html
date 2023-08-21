@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-3">
+          <div class="filter">
+              <label *ngFor="let category of categories">
+                  <input type="radio" [value]="category" name="filter" [(ngModel)]="selectedCategory"
+                      (change)="filterByCategory()">
+                  <span>{{ category }}</span>
+              </label>
+          </div>
+      </div>
+      <div class="col-md-9">
+          <div class="row">
+              <div class="col-md-4 mb-3" *ngFor="let menu of filteredMenus">
+                  <div class="card">
+                      <img class="card-img-top" [src]="menu.imagesource" alt="Card image cap">
+                      <div class="card-body">
+                          <h5 class="card-title">{{ menu.menuName }}</h5>
+                          <p class="card-text">Category - {{ menu.category }}</p>
+                          <p class="card-text">Description - {{ menu.description }}</p>
+                          <p class="card-text">Price - {{ menu.price }}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
